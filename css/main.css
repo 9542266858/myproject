@@ -1332,3 +1332,7 @@ textarea, label {
     padding: 20px; }
   .contact-form .input-field.name {
     margin-right: 0; } }
+
+.test {
+  background: red;
+}
