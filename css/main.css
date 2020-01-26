@@ -1,12 +1,27 @@
 /*------------------------------------------------
 	Base Styles
 -------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Philosopher:400,400i,700,700i&display=swap');
+
+
 body {
-  font-family: "Libre Baskerville", serif;
+  font-family: 'Philosopher', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #ababab; }
+
+.title-tag h2 {
+  text-transform: inherit !important;
+}
+.title-tag h2 > p {
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: 'Philosopher', sans-serif;
+  margin: -10px 0 0 8px;
+}
 
 a {
   color: inherit;
@@ -130,6 +145,23 @@ textarea, label {
 .primary,
 .link:hover {
   color: #3D737C; }
+
+
+.skill_tlt {
+  color: #000;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.skill-flex  {
+  width: calc(50% - 30px);
+  margin: 0 15px;
+}
 
 .no-gutter {
   margin-left: 0;
@@ -1226,7 +1258,14 @@ textarea, label {
   .testimonials .thumb {
     margin-top: -45px; }
   .history-item .history-text {
-    padding-right: 15px; } }
+    padding-right: 15px; }
+}
+
+@media only screen and (max-width: 992px) {
+  .title-tag h2 > p {
+    letter-spacing: 2px;
+  }
+}
 
 /*============================================================
 	Mobile (Portrait) Design for a width of 320px
@@ -1331,8 +1370,26 @@ textarea, label {
     margin-right: 50px;
     padding: 20px; }
   .contact-form .input-field.name {
-    margin-right: 0; } }
-
-.test {
-  background: red;
+    margin-right: 0; }
+  .title-tag p {
+    font-size: 15px;
+    margin: auto;
+  }
+  .page-title .title-bg {
+    font-size: 75px;
+  }
+  .page-title.title-tag {
+    margin-top: 50px;
+  }
+   .page-title.title-tag .title-bg {
+    top: -36%;
+  }
+   .hexagon-menu{
+     display: flex;
+     flex-wrap: wrap;
+   }
+  .skill-flex  {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
 }
