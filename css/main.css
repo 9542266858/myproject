@@ -1265,6 +1265,14 @@ textarea, label {
   .title-tag h2 > p {
     letter-spacing: 2px;
   }
+  .pt-table.desktop-768 .pt-tablecell .page-nav {
+    bottom: inherit;
+    top: 0;
+    position: fixed;
+    background-color: black;
+    padding: 5px;
+    z-index: 200;
+  }
 }
 
 /*============================================================
@@ -1279,7 +1287,9 @@ textarea, label {
   .pt-tablecell {
     display: block; }
   .page-title {
-    margin-bottom: 45px; }
+    margin: 50px 0;
+    display: block;
+  }
     .page-title h2 {
       font-size: 35px; }
     .page-title .title-bg {
@@ -1376,14 +1386,13 @@ textarea, label {
     margin: auto;
   }
   .page-title .title-bg {
-    font-size: 75px;
+    font-size: 46px;
+    margin-top: -40px;
   }
   .page-title.title-tag {
-    margin-top: 50px;
+    margin-top: 0px;
   }
-   .page-title.title-tag .title-bg {
-    top: -36%;
-  }
+
    .hexagon-menu{
      display: flex;
      flex-wrap: wrap;
@@ -1392,6 +1401,42 @@ textarea, label {
     width: calc(100% - 30px);
     margin: 0 15px;
   }
+}
+
+.whatsapp_chat {
+  position: fixed;
+}
+
+#scroll {
+  position:fixed;
+  left:10px;
+  bottom:20px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color: #000;
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px;
+  z-index: 999;
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color: #4a7c85;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
 }
 
 
