@@ -1416,9 +1416,29 @@ textarea, label {
     margin: 0;
   }
 }
-
-.whatsapp_chat {
+.whatsapp_chat .whatsup {
   position: fixed;
+  display: none;
+  background: #02be50;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 30px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.whatsup .icon {
+  width: 55px;
+  height: 55px;
+  background: transparent url(../images/icon-wp.png) center no-repeat;
+  background-size: 80%;
+  display: inline-block;
 }
 
 #scroll {
@@ -1478,9 +1498,6 @@ textarea, label {
   50% { border-color: #3d737c }
 }
 
-
-
-Resources
 
 
 .test123456 {
